@@ -5,7 +5,7 @@ command /rule:
     trigger:
         send "&6-----------------------------------------------" to player
         send "&6| | &rWelcome to &aα &cServer&r!! &6| |" to player
-        send "&aα&8(アルファ)6a鯖&rへようこそ。" to player
+        send "&aα&8(アルファ)&a鯖&rへようこそ。" to player
         send "&c・-= ルール / Rule =-" to player
         send "・暴言・差別的発言・性的発言その他を禁じます。" to player
         send "・Hackクライアントやバグを用いた荒らし・Hackを禁じます。" to player
@@ -18,7 +18,7 @@ command /rule:
 on join:
     send "&6-----------------------------------------------" to player
     send "&6| | &rWelcome to &aα &cServer&r!! &6| |" to player
-    send "&aα&8(アルファ)6a鯖&rへようこそ。" to player
+    send "&aα&8(アルファ)&a鯖&rへようこそ。" to player
     send "&c・-= ルール / Rule =-" to player
     send "・暴言・差別的発言・性的発言その他を禁じます。" to player
     send "・Hackクライアントやバグを用いた荒らし・Hackを禁じます。" to player
