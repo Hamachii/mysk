@@ -28,4 +28,6 @@ on join:
     send "&8➥ &rバグが起きる可能性があるので、もしバグを発見した場合は&c運営に伝えてもらえたら嬉しいです！" to player
     send "&a&n楽しんでいってくださいね！" to player
     send "&6-----------------------------------------------" to player
-    
+command /a [<text>]:
+    trigger:
+        command "/tellraw @a [{"text":"【","color":"dark_blue"},{"text":"Announce","color":"blue"},{"text":"】 ","color":"dark_blue"},{"text":"%arg 1%","color":"white"},{"text":" &8by %player%","color":"white"},]"
