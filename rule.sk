@@ -31,3 +31,8 @@ on join:
 command /a [<text>]:
     trigger:
         command "/tellraw @a [{"text":"【","color":"dark_blue"},{"text":"Announce","color":"blue"},{"text":"】 ","color":"dark_blue"},{"text":"%arg 1%","color":"white"},{"text":" &8by %player%","color":"white"},]"
+command /by:
+    trigger:
+        send "&cOwner&a: &rxNeed" to player
+        send "&6Co-Owner&a&a: &rNkokunn5656" to player
+        send "&9OP&a: takeru1028" to player
