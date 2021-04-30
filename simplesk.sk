@@ -1,0 +1,11 @@
+command /announse [<text>]:
+    trigger:
+        execute console command "/tellraw @a [{"text":"【","color":"dark_blue"},{"text":"Announce","color":"blue"},{"text":"】 ","color":"dark_blue"},{"text":"%arg 1%","color":"white"}]"
+        send "&aSeccues! &r/ &8by HamacDev" to player
+        send "Preview text : %arg 1%" to player
+command /wtp [<text>] [<text>]:
+    trigger:
+        execute console command "/mvtp %arg 1% %arg 2%"
+command /spawn:
+    trigger:
+        execute console command "/mvtp %player% world" #この「world」ってところをロビーのワールド名にしてください
