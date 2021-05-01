@@ -1,0 +1,6 @@
+command /melonpancity:
+    trigger:
+        send "&6| | &aMelonpan &rCity &6| |" to player
+        send "&aMelonPanCity&rとは？" to player
+        send "↳ &aクリエイティブサーバー&rに位置する&c発展中の都市&rです。" to player
+        send "&aリーダー&r: &c_55_melonpan" to player
