@@ -15,6 +15,7 @@ command /rule:
         send "&8➥ &rバグが起きる可能性があるので、もしバグを発見した場合は&c運営に伝えてもらえたら嬉しいです！" to player
         send "&a&n楽しんでいってくださいね！" to player
         send "&6-----------------------------------------------" to player 
+        execute by console "/tellraw %player% {"text":"詳しいURLはこちら","color":"red","bold":true,"clickEvent":{"action":"open_url","value":"https://mc-alpha.github.io"}}"
 on join:
     send "&6-----------------------------------------------" to player
     send "&6| | &rWelcome to &aα &cServer&r!! &6| |" to player
@@ -36,3 +37,4 @@ command /by:
         send "&cOwner&a: &rxNeed" to player
         send "&6Co-Owner&a&a: &rNkokunn5656" to player
         send "&9OP&a: takeru1028" to player
+        execute by console "/tellraw %player% {"text":"詳しいURLはこちら","color":"red","bold":true,"clickEvent":{"action":"open_url","value":"https://mc-alpha.github.io"}}"
