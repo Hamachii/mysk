@@ -1,0 +1,22 @@
+command /servers:
+    trigger:
+	    open chest with 6 row named "- Server list -" to player
+		set slot 10 of player's current inventory to grass named "&aサバイバルサーバー"
+		set slot 12 of player's current inventory to planks named "&9クリエイティブサーバー"
+		set slot 14 of player's current inventory to diamond_pickaxe named "&4狂気&rの&c整地鯖"
+		set slot 16 of player's current inventory to bedrock named "&b2p2r"
+		set slot 49 of player's current inventory to bedrock named "&6HUB"
+		
+on inventory click:
+    if name of player's current inventory contain "- Server list -":
+	    cancel event
+		if name of clicked item is "&aサバイバルサーバー":
+		    execute by console "/mvtp %player% survival"
+		if name of clicked item is "&9クリエイティブサーバー":
+		    execute by console "/mvtp %player% crea"
+		if name of clicked item is "&4狂気&rの&c整地鯖":
+		    execute by console "/mvtp %player% seichi"
+		if name of clicked item is "&b2p2r":
+		    execute by console "/mvtp %player% 2p2r"
+		if name of clicked item is "&6HUB":
+		    execute by console "/mvtp %player% world"
