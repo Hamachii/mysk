@@ -1,0 +1,6 @@
+command /an <text>:
+    permision: op
+    trigger:
+        broadcast "&9[&cAnnounce&9] &r%arg 1%"
+        send "&eSeccues! / 送信できました" to player
+        send "&c内容&r: %arg 1%" to player
