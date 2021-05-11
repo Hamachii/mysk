@@ -12,11 +12,16 @@ on inventory click:
 	    cancel event
 		if name of clicked item is "&aサバイバルサーバー":
 		    execute by console "/mvtp %player% survival"
+		    execute by console "gamemode s %player%"
 		if name of clicked item is "&9クリエイティブサーバー":
 		    execute by console "/mvtp %player% crea"
+		    execute by console "gamemode c %player%"
 		if name of clicked item is "&4狂気&rの&c整地鯖":
 		    execute by console "/mvtp %player% seichi"
+		    execute by console "gamemode s %player%"
 		if name of clicked item is "&b2p2r":
 		    execute by console "/mvtp %player% 2p2r"
+		    execute by console "gamemode s %player%"
 		if name of clicked item is "&6HUB":
 		    execute by console "/mvtp %player% world"
+		    execute by console "gamemode a %player%"
