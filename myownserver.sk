@@ -20,7 +20,9 @@ command /deleteserver:
     trigger:
         execute console command "mvtp %player% %arg 1%"
         send "%arg 1% さんのサーバーに移動しています..."
-        
+command /hub:
+    trigger:
+        execute console command "mvtp %player% world"
 ### 上のやつは任意で。対策してないため。「###」を取れば稼働します。ですが対策をしていないので荒らされる可能性があります。気を付けてください。
 command /helps:
     trigger:
@@ -28,6 +30,7 @@ command /helps:
         send "&c/cserver &rで&cサーバーを作成&rできます。" to player
         send "&c/goserver &rで&cサーバーにtp&rできます。" to player
         send "&c/deleteserver &rで&cサーバーを削除&rできます。" to player
+        send "&c/hub &rで&c元サーバーへtp&rできます。" to player
         send "&9≫ &6前提プラグイン" to player
         send "&cMultiverse-Core&rプラグインが&c絶対&r必要です。" to player
         send "&9≫ &6製作者" to player
