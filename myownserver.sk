@@ -8,7 +8,7 @@ command /goserver:
     trigger:
         execute console command "mvtp %player% %player%"
         send "&6移動中..." to player
-command /deleteserver
+command /deleteserver:
     trigger:
         if arg-1 is "confirm":
             execute console command "mv delete %player%"
