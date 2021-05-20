@@ -1,6 +1,6 @@
 command /cserver:
     trigger:
-        execute console command "mv clone %player% 1"
+        execute console command "mv create %player% normal"
         send "&cサーバーを作成しています...少し待機していてください。" to player
         wait 3 seconds
         send "&cサーバーが作成されました！ /goserver でtpできます。" to player
