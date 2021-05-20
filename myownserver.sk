@@ -1,0 +1,24 @@
+command /cserver:
+    trigger:
+        execute console command "mv clone %player% 1"
+        send "&cサーバーを作成しています...少し待機していてください。" to player
+        wait 3 seconds
+        send "&cサーバーが作成されました！ /goserver でtpできます。" to player
+command /goserver:
+    trigger:
+        execute console command "mvtp %player% %player%"
+        send "&6移動中..." to player
+command /deleteserver
+    trigger:
+        if arg-1 is "confirm":
+            execute console command "mv delete %player%"
+            execute console command "mvconfirm"
+            send "&6サーバーを&c完全に&6削除しました。また遊んでね！"
+        else:
+            send "&4Realy? / 本当に削除しますか？ /deleteserver confirm"
+###command /server <text>:
+    trigger:
+        execute console command "mvtp %player% %arg 1%"
+        send "%arg 1% さんのサーバーに移動しています..."
+        
+### 上のやつは任意で。対策してないため。「###」を取れば稼働します。ですが対策をしていないので荒らされる可能性があります。気を付けてください。
